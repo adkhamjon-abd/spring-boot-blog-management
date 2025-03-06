@@ -19,11 +19,11 @@ public class Comment {
 
     @ManyToOne
     @JoinColumn(name = "post_id", nullable = false)
-    private int postId;
+    private Post post;
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private int userId;
+    private User user;
 
     @Column(nullable = false)
     private String Content;
